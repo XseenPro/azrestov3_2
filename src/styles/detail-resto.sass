@@ -1,0 +1,320 @@
+.detail
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  border: 10px solid transparent
+  border-image-source: url(../public/images/heros/hero-image_2.jpg)
+  border-image-slice: 30
+  border-image-width: 50px
+  border-image-repeat: stretch
+  margin-top: -5rem
+  
+
+detail-resto
+  width: 70%
+  margin-top: 90px
+
+detail-resto h1
+  text-align: center
+  padding: 20px 0px
+
+  &-img
+    width: 100%
+
+.detail-img
+  position: relative
+  box-shadow: 0 0 5px #DF1505, 0 0 10px #DF1505, 0 0 20px #DF1505, 0 0 30px #DF1505
+  margin-bottom: 20px
+  border-radius: 15px
+
+  & img:hover
+    transform: scale(1.05)
+    transition: 0.5s all linear
+
+detail-resto > .detail-img img
+    width: 100%
+    object-fit: cover
+    border-radius: 15px
+    margin-bottom: -5px
+
+.address
+  display: flex
+  flex-wrap: wrap
+  list-style-type: none
+  gap: 10px
+  margin: 8px 0px 30px 0px
+  color: rgb(71, 71, 71)
+  font-size: 14px
+
+.info
+  text-align: justify
+  line-height: 25px
+  margin-bottom: 20px
+
+.daftar-menu
+  display: flex
+  gap: 40px
+  margin-top: 10px
+
+.konsumsi
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-items: center
+  margin-bottom: 8rem
+
+  & .de-title h2
+    -webkit-text-stroke: 0.3px #DF1505
+    margin-top: 2rem
+    color: #000
+    font-weight: 700
+    border-bottom: 2px solid #DF1505
+    width: fit-content
+
+.content-detail-resto
+  .nama-resto
+    font-family: var(--font-latin)
+    font-size: 80px
+    font-weight: 500
+    letter-spacing: 5px
+    border-bottom: 2px solid #DF1505
+    width: fit-content
+    text-align: center
+    margin: 0 auto
+  .rating
+    text-align: center
+    font-size: 20px
+    margin-top: 2px
+    margin-bottom: 2rem
+
+.gap-daftar-menu
+  margin-right: 8rem
+  margin-left: 8rem
+
+.konsumsi ul li
+  list-style-type: none
+  transition: transform 0.3s ease, border-bottom 0.3s ease
+
+  &:hover
+    transform: scale(1.3)
+    border-bottom: 2px solid #DF1505
+
+  &:hover
+    color: black
+
+  &:hover .fa-circle-check
+    color: #DF1505
+
+.food-content h3,
+.drink-content h3
+  font-size: 25px
+  margin-bottom: 40px
+  border-bottom: 2px solid #DF1505
+  width: fit-content
+
+.food-content ul li,
+.drink-content ul li
+  margin-top: 10px
+  margin-left: 20px
+  font-size: 20px
+
+.comment
+  margin-top: 20px
+  padding-bottom: 15px
+  position: relative
+  border-bottom: 2px solid #DF1505
+  width: fit-content
+
+.view-comment
+  width: 100%
+  margin-top: 41px
+  list-style: none
+
+  & li
+    display: flex
+    gap: 10px
+    margin-bottom: 20px
+    padding-bottom: 20px
+    border-bottom: 1px solid black
+
+  &-margin
+    margin-left: 40px
+
+.icon-user
+  width: 60px
+  height: 60px
+  padding: 3px
+  border: 1px solid rgb(94, 94, 94)
+  display: flex
+  border-radius: 50%
+  flex-direction: column
+  align-items: center
+
+  & > div
+    margin-top: 8px
+    width: 70%
+    height: 70%
+    position: relative
+    overflow: hidden
+
+  & > div::before
+    position: absolute
+    content: ""
+    width: 55%
+    height: 55%
+    border-radius: 50%
+    top: 30%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: rgb(94, 94, 94)
+
+  & > div::after
+    position: absolute
+    content: ""
+    width: 100%
+    height: 100%
+    border-radius: 40%
+    bottom: -65%
+    background-color: rgb(94, 94, 94)
+
+.info-comment
+  width: 50vw
+
+  & b
+    font-size: 18px
+
+  & > p:nth-child(2)
+    font-size: 14px
+    margin-bottom: 15px
+
+  & p:nth-child(3)
+    font-size: 15px
+
+.add-review
+  display: flex
+  flex-direction: column
+  gap: 30px
+  margin-bottom: 5rem
+
+#captionReview
+  margin-top: 40px
+  margin-bottom: 25px
+
+.submit
+  color: #fff
+  font-weight: 500
+  font-size: 24px
+  background-color: #101414
+  padding: 0.5em
+  text-align: center
+  border: none
+  border-radius: 12px
+  width: 13rem
+  margin: auto
+  border: 2px solid red
+  cursor: pointer
+  overflow: hidden
+  transition: 0.5s all linear
+  margin-top: 2rem
+
+  &:hover
+    background-color: #DF1505
+    border: 2px solid #101414
+
+// like
+.like
+  width: 55px
+  height: 55px
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: #DF1505
+  position: fixed
+  bottom: 16px
+  right: 16px
+  border-radius: 50%
+  border: 0
+
+  font-size: 18px
+  color: #fff
+  cursor: pointer
+
+@media screen and (max-width: 700px)
+  detail-resto
+    width: 85%
+    margin-top: 90px
+
+.input-container
+  height: 50px
+  position: relative
+  width: 100%
+
+.ic1
+  margin-top: 20px
+
+.ic2
+  margin-top: 5px
+  margin-bottom: 40px
+
+.input
+  background-color: #e4e4e4
+  border-radius: 12px
+  border: 0
+  box-sizing: border-box
+  color: #020202
+  font-size: 18px
+  height: 100%
+  outline: 0
+  padding: 4px 20px 0
+  width: 100%
+
+.review
+  height: 200%
+  font-size: 16px
+  padding-top: 17px
+
+.cut
+  background-color: #ffffff
+  border-radius: 10px
+  height: 30px
+  left: 20px
+  position: absolute
+  top: -30px
+  transform: translateY()
+  transition: transform 200ms
+  width: 96px
+  &-short
+    width: 70px
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut
+  transform: translateY(10px)
+
+.placeholder
+  color: #65657b
+  left: 20px
+  line-height: 14px
+  pointer-events: none
+  position: absolute
+  transform-origin: 0 50%
+  transition: transform 200ms, color 200ms
+  top: 20px
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder
+  transform: translateY(-30px) translateX(10px) scale(0.75)
+
+.input:not(:placeholder-shown) ~ .placeholder
+  color: #808097
+  font-size: 20px
+  text-transform: capitalize
+
+.input:focus ~ .placeholder
+  color: #000000
+  font-size: 20px
+  text-transform: capitalize
+
+.img-error
+  width: 100%

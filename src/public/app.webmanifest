@@ -1,0 +1,18 @@
+{
+  "id": "azkal-resto-pwa-1",
+  "start_url": "./index.html",
+  "name": "Azkal Resto",
+  "short_name": "AZResto",
+  "description": "find the nearest restaurant in your city",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#CA1507",
+  "icons": [
+    {
+      "src": "/icons/icon_344.png",
+      "sizes": "344x344",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

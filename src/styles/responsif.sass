@@ -1,0 +1,84 @@
+@media only screen and (max-width: 768px)
+  .hamburger
+    display: block
+    z-index: 99
+  .nav-list 
+    display: none
+
+  .hero .hero-content h1,
+  .hero .hero-content h1.sub-title
+    font-size: 32px
+
+  .hero .hero-content h3
+    /* margin-top: -50px; */
+    font-size: 84px
+    text-align: center
+    justify-items: center
+    align-items: center
+    margin-bottom: 20px
+  
+  .hero:after
+    background-image: url(../public/images/heros/hero-image_2_mobile.jpeg)
+
+  .de-title h5.title
+    font-size: 50px
+
+  .wrapper
+    margin-bottom: -20rem
+    display: block
+    .chef
+      display: flex
+      flex-direction: column
+      margin: 0 auto
+      justify-items: center
+      align-items: center
+
+    .slider
+      display: block
+      width: 80%
+      margin-bottom: 1rem
+
+    input:checked + label
+      height: 600px
+      width: 80%
+      display: block
+
+    input:checked + label .description
+      opacity: 1 !important
+      transform: translateY(0) !important
+      display: block
+
+    & > .row
+      display: block
+      margin-bottom: 2rem
+
+  .footer-content p 
+    max-width: 500px
+    margin-right: 1rem
+    margin-left: 1rem
+    font-size: 16px
+
+  .gap-daftar-menu
+    display: none
+  
+  .content-detail-resto
+    .nama-resto
+      font-size: 48px
+  
+  .detail
+    border-image-width: 10px
+  
+
+@media only screen and (min-width: 769px)
+  .main-resto > p::-webkit-scrollbar
+    width: 0
+  .wrapper
+    margin-top: -6rem
+  .menubar
+    display: none
+
+@media (max-width: 500px)
+  .footer-menu ul
+    display: flex
+    margin-top: 10px
+    margin-bottom: 20px
